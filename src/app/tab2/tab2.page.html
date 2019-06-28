@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      Buscar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+
+    
+    <ion-item>Caruru</ion-item>
+    <ion-item>Vatapá</ion-item>
+    <ion-item>Sarapatel</ion-item>
+    <ion-item>Paçoca de Carne Seca</ion-item>
+    <ion-item>Carne de Sol com Queijo Coalho</ion-item>
+    <ion-item>Pato no Tucupi</ion-item>
+    <ion-item>Caldeirada</ion-item>
+    <ion-item>Tacacá</ion-item>
+    <ion-item>Mujica de Peixe</ion-item>
+    <ion-item>Caruru Paraense</ion-item>
+    <ion-item>Gutijuba</ion-item>
+    <ion-item>Maniçoba</ion-item>
+    <ion-item>Damorida</ion-item>
+    <ion-item>Acarajé</ion-item>
+
+
+  </ion-content>
